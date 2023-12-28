@@ -1,5 +1,9 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { deleteBook, toggleFavorite,selectBooks } from '../../redux/slices/booksSlice'
+import {
+    deleteBook,
+    toggleFavorite,
+    selectBooks,
+} from '../../redux/slices/booksSlice'
 import {
     selectAuthorFilter,
     selectTitleFilter,
@@ -65,7 +69,8 @@ const BookList = () => {
                                 by{' '}
                                 <strong>
                                     {highlightMatch(book.author, authorFilter)}
-                                </strong>
+                                </strong>{' '}
+                                ({book.sourse})
                             </div>
                             <div className="book-actions">
                                 <span
