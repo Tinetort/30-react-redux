@@ -18,12 +18,6 @@ const booksSlice = createSlice({
                     book.isFavorite = !book.isFavorite
                 }
             })
-
-            // return state.map((book) =>
-            //     book.id === action.payload
-            //         ? { ...book, isFavorite: !book.isFavorite }
-            //         : book
-            // )
         },
     },
 })
